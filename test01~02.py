@@ -193,5 +193,5 @@ print('testList2 : ', testList2)
 testList2.insert(0, 100)  # 100, 10, 20, 30, 5
 print('testList2 : ', testList2)
 
-sorted(testList2)  # 5, 10, 20, 30, 100
-print('sortedTestList2 : ', testList2)
+sortedTestList2 = sorted(testList2)  # 5, 10, 20, 30, 100
+print('sortedTestList2 : ', sortedTestList2)
