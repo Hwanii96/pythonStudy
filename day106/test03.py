@@ -61,7 +61,12 @@ def avgCal():
     studentScoreSum = sum(studentScoreList)
     studentScoreListLength = len(studentScoreList)
     studentAvg = studentScoreSum / studentScoreListLength  # 평균 = 학생 점수 총합 / 학생 점수 리스트의 길이
-    print(f"{studentScoreListLength}명의 평균 점수는 {studentAvg:.1f}점 입니다.")
+
+    return f"{studentScoreListLength}명의 평균 점수는 {studentAvg:.1f}점 입니다."
 
 
-print(avgCal())  # 이건 왜 None 이 뜨지 ?
+avgCalResult = avgCal()
+print(avgCalResult)
+
+# 함수에 반환값이 없으면 print() 를 하면 None 이 뜨게 된다.
+# 함수에 return 값을 직접 명시해주면 None 이 사라 지게 된다.

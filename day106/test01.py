@@ -23,7 +23,7 @@ def printApple():
 printApple()
 
 
-# 함수의 장점
+# 함수 사용의 장점
 # 코드 재사용성 용이
 # 유지보수 용이
 # 오류의 파급효과 절감 (잘 만들어진 함수를 재사용 하기 때문에 오류가 날 가능성이 낮아진다)
@@ -40,7 +40,7 @@ def funcB(b):
 
 # funcB()  # TypeError: funcB() missing 1 required positional argument: 'b' -> 필수적으로 인자 1개가 필요 !
 
-funcB(-13)  # 에코 현상 왜 안 일어남 ? (원래 반환값을 저장할 공간을 주지 않으면 값이 한번 더 보여지는 에코 현상이 발생)
+funcB(-13)  # 에코 현상 이란 ?
 
 banana = funcB(-13)
 
@@ -77,6 +77,7 @@ def funcF(a, b, c=123):  # 디폴트 매개변수 (무한대로 설정이 가능
 
 funcF(-1, -2, -3)
 print()
+
 funcF(-1, -2)
 print()
 
