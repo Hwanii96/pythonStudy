@@ -5,6 +5,9 @@ aList.txt 를 생성 하세요.
 사과는(은) 12000원 입니다.
 """
 
+# for i in range(0, len(aList), 2):
+# 자바로 따지면 for(int i = 0; i < aList.size(); i += 2) 와 동일 하다.
+
 aList = ['사과', 1200, '바나나', 3900, '키위', 5400]
 
 with open('aList.txt', 'wt') as file:
