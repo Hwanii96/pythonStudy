@@ -41,7 +41,7 @@ with open('bList.txt', 'at') as file:
     while True:
         print('예시 : [홍길동] [남]')
         text = input('입력 :')
-        if not text:
+        if not text:  # 종료 조건
             break
         file.write(text + '\n')
 
