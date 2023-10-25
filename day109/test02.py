@@ -53,6 +53,7 @@ while True:
         userInput = int(input("찾고자 하는 정수를 입력 하세요 : "))
         if userInput < minNum or userInput > maxNum:
             print('1 ~ 100의 범위를 초과 했습니다. 다시 입력해 주세요 !')
+            continue
         elif userInput == txtNumber:  # 사용자가 입력한 값이 파일 안에 있을 때
             cnt += 1
             print(userInput, '! 정답 입니다 ! :D')
