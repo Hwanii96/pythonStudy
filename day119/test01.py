@@ -15,7 +15,7 @@ with open('korea.csv', 'r') as file:
 
     try:
         for row in data:
-            if area in row[0]:  # csv 파일의 모든 행의 0번째 요소값이 입력한 동 이름과 동일 하면
+            if area in row[0]:  # csv 파일의 모든 행의 0번째 요소값이 입력한 동 이름을 포함 하면
                 inputInfo = np.array(row[0])
                 print(inputInfo)  # 콘솔창에 출력 하기.
                 for v in row[3:]:
